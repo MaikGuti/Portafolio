@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de Michael Gutiérrez, estudiante de programación. Proyecto hecho con HTML y CSS.">
+    <meta name="author" content="Michael Félix Gutiérrez Mejía">
+    <meta name="keywords" content="portafolio, estudiante, programacion, html, css, desarrollo web">
+    <title>Michael Gutiérrez - Portafolio</title>
+    <link rel="shortcut icon" href="./iconos/logo.jpg" type="image/jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="contenedor">
+                <div class="logo">MG</div>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="presentacion">
+            <div class="contenedor">
+                <div class="contenido-presentacion">
+                    <h1 class="titulo">Hola, soy <span class="highlight">Michael Félix Gutiérrez Mejía</span></h1>
+                    <p class="subtitulo">Estoy estudiando programación y aprendiendo desarrollo web desde cero. Este portafolio es uno de mis primeros proyectos, hecho solo con HTML y CSS, y aquí voy a ir subiendo los que haga más adelante.</p>
+                    <div class="botones">
+                        <a href="#portafolio" class="btn btn-primary">Ver Proyectos</a>
+                        <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-circle">
+                        <img src="./iconos/perfil.jpg" alt="Foto de perfil de Michael Félix Gutiérrez Mejía" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- Sobre mí -->
+            <section id="sobre-mi" class="about">
+                <div class="about-text contenedor">
+                    <h2 class="section-title">Sobre mí</h2>
+                    <p>Empecé a estudiar programación porque siempre me llamó la atención cómo funcionan las páginas por dentro. Todavía estoy en las primeras etapas, aprendiendo HTML y CSS bien a fondo antes de meterme con JavaScript, y de a poco voy practicando cosas como Flexbox, Grid y que la página se vea bien en el celular.</p>
+                </div>
+            </section>
+
+            <!-- Habilidades -->
+            <section id="habilidades" class="seccion-habilidades">
+                <div class="habilidades contenedor">
+                    <h2 class="section-title">Habilidades</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">HTML</div>
+                            <h3>HTML</h3>
+                            <p>Estructura de páginas usando etiquetas semánticas.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">CSS</div>
+                            <h3>CSS</h3>
+                            <p>Estilos, Flexbox, Grid y diseño responsive.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">JS</div>
+                            <h3>JavaScript</h3>
+                            <p>Recién empezando, todavía con lo básico.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portafolio -->
+            <section id="portafolio" class="portfolio">
+                <div class="contenedor">
+                    <h2 class="section-title">Portafolio</h2>
+                    <div class="portfolio-grid">
+                        <article class="project-card">
+                            <div class="project-image project-img-1"></div>
+                            <div class="project-info">
+                                <h3>Blog de Recetas</h3>
+                                <p>Maquetado de un blog de cocina, practicando la estructura con section y article.</p>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-image project-img-2"></div>
+                            <div class="project-info">
+                                <h3>Tienda de Ropa</h3>
+                                <p>Idea de una tienda online, enfocado en acomodar los productos con Grid.</p>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-image project-img-3"></div>
+                            <div class="project-info">
+                                <h3>Lista de Tareas</h3>
+                                <p>Interfaz de una app para anotar pendientes, practicando formularios y botones.</p>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-image project-img-4"></div>
+                            <div class="project-info">
+                                <h3>App del Clima</h3>
+                                <p>Diseño de una pantalla para mostrar el pronóstico del tiempo de forma simple.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contacto -->
+            <section id="contacto" class="contact">
+                <div class="contenedor contact-content">
+                    <div class="contact-info">
+                        <h2 class="section-title">Contacto</h2>
+                        <p>Si quieres dejarme algún comentario sobre el proyecto, me puedes escribir por acá.</p>
+                    </div>
+                    <form class="contact-form" action="#" method="POST" aria-label="Formulario de contacto">
+                        <label for="name">Nombre</label>
+                        <input id="name" name="name" type="text" placeholder="Tu nombre" required>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="tu@ejemplo.com" required>
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Michael Gutiérrez. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://github.com/MaikGuti" class="social-link" aria-label="Perfil de GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/michael-f%C3%A9lix-guti%C3%A9rrez-mej%C3%ADa-283669127/" class="social-link" aria-label="Perfil de LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://x.com/Guti_Maik" class="social-link" aria-label="Perfil de Twitter" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
